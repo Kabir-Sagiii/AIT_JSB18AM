@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      .myclass {
+        color: green;
+      }
+      .newclass {
+        color: red;
+      }
+    </style>
+    <script>
+      function getDomElement() {
+        //Logic to access h2,p,button Dom Element
+        var h2DomElement = document.getElementById("heading");
+        var pDomElement = document.getElementById("para");
+        var buttonDomElement = document.getElementById("btn");
+
+        //Access Content in between opening and Closing tag
+        var h2content = h2DomElement.innerText;
+        console.log(h2content);
+
+        //Update DOMElement Content
+        h2DomElement.innerText = "Hello, Document Object Model";
+
+        pDomElement.innerText = `Welcome to the React documentation! 
+        This page will give you an introduction 
+        to the 80% of React concepts that you 
+        will use on a daily basis.
+        `;
+
+        buttonDomElement.innerText = "DOM Manipulated";
+
+        //Printing all the key names of h2DomElement Properties
+        // for (let key in document) {
+        //   console.log(key);
+        // }
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="heading" class="myclass">Welcome to DOM</h2>
+    <p id="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+      cupiditate. Id consequatur fugit, ipsam architecto illum enim? Laboriosam
+      voluptatem molestiae est deleniti nesciunt culpa pariatur ab voluptates
+      delectus quae dolor alias soluta veritatis, tempore in id dolorem iure aut
+      sit corporis veniam natus esse perferendis vero! Quidem pariatur unde
+      officia. Quaerat ex illo, veniam, fuga omnis quibusdam rerum
+      exercitationem illum harum corrupti deleniti reiciendis a libero
+      voluptatem culpa vitae vel, explicabo perspiciatis eius. Natus, rem. Illo
+      beatae iure, doloribus est sit pariatur consequuntur labore dolor eveniet
+      consectetur officia quod mollitia modi corporis cupiditate? Dicta quo
+      aperiam numquam hic saepe aliquid.
+    </p>
+    <button id="btn" onclick="getDomElement()">Get DOM element</button>
+  </body>
+</html>

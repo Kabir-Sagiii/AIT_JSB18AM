@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      .myclass {
+        color: green;
+      }
+      .newclass {
+        color: red;
+      }
+    </style>
+    <script>
+      function getDomElement() {
+        //Logic to access h2,p,button Dom Element
+        var h2DomElement = document.getElementById("heading");
+        var pDomElement = document.getElementById("para");
+        var buttonDomElement = document.getElementById("btn");
+
+        //Accessing Value of id and class
+        var idValue = h2DomElement.id;
+        var classNameValue = h2DomElement.className;
+        console.log(idValue, classNameValue);
+
+        //Adding newClass to h2
+        h2DomElement.classList.add("newClass");
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="heading" class="myclass oldclass">Welcome to DOM</h2>
+    <p id="para">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+      cupiditate. Id consequatur fugit, ipsam architecto illum enim? Laboriosam
+      voluptatem molestiae est deleniti nesciunt culpa pariatur ab voluptates
+      delectus quae dolor alias soluta veritatis, tempore in id dolorem iure aut
+      sit corporis veniam natus esse perferendis vero! Quidem pariatur unde
+      officia. Quaerat ex illo, veniam, fuga omnis quibusdam rerum
+      exercitationem illum harum corrupti deleniti reiciendis a libero
+      voluptatem culpa vitae vel, explicabo perspiciatis eius. Natus, rem. Illo
+      beatae iure, doloribus est sit pariatur consequuntur labore dolor eveniet
+      consectetur officia quod mollitia modi corporis cupiditate? Dicta quo
+      aperiam numquam hic saepe aliquid.
+    </p>
+    <button id="btn" onclick="getDomElement()">Get DOM element</button>
+  </body>
+</html>
