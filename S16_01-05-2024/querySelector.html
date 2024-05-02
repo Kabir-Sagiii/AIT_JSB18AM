@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        padding: 30px;
+        width: 500px;
+        margin: 100px auto;
+        box-shadow: 0px 0px 10px green;
+      }
+      .container h2 {
+        color: green;
+      }
+      .newcontainer {
+        padding: 30px;
+        width: 800px;
+        margin: 100px auto;
+        box-shadow: 10px 0px 10px rgb(138, 76, 14);
+      }
+      .newcontainer h2 {
+        color: rgb(138, 76, 14);
+      }
+    </style>
+    <script>
+      function FntagName() {
+        // divDomElement = document.querySelector("#fDiv");
+
+        // divDomElement = document.querySelector(".container");
+
+        divDomElement = document.querySelector("div");
+
+        divDomElement.classList.remove("container");
+
+        divDomElement.classList.add("newcontainer");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="fDiv" class="container" name="firstdiv">
+      <h2 name="firsth2" id="title">Query Selector</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        molestias error quos cum commodi, ut illo voluptatem, vitae, optio quas
+        dolores. Eum quibusdam consequatur soluta facere? Enim accusamus nemo
+        eos. Quasi, recusandae. Fugiat, quas nemo. Voluptatem et nihil sint
+        similique, nostrum doloribus debitis unde vero ducimus! Quia, nostrum
+        aspernatur quibusdam atque aut, perferendis laudantium error nobis
+        facere soluta deleniti sunt voluptas qui maxime! Aspernatur, vero minima
+        aliquid, voluptatibus praesentium cupiditate doloremque distinctio
+        quibusdam molestiae magni voluptatem, laborum aperiam nihil natus
+        obcaecati numquam! Delectus eligendi non dolore aut pariatur, ipsam quas
+        exercitationem eum veniam hic, nesciunt minima doloribus molestias
+        incidunt ipsa!
+      </p>
+      <button onclick="FntagName()">Remove Class</button>
+    </div>
+
+    <div class="container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab culpa
+      assumenda recusandae saepe deleniti dolorem illum officiis quaerat
+      architecto. Tenetur in, maiores assumenda illo minus fugiat! Esse
+      voluptates, nisi porro suscipit labore, laboriosam nostrum eveniet
+      sapiente impedit maiores assumenda, minus aliquid minima at dolor quo
+      obcaecati consequuntur mollitia libero illum fugiat aspernatur eaque!
+      Animi impedit soluta incidunt eos rem magnam accusamus iure odio pariatur
+      nulla enim atque amet iste, fugiat minima at explicabo laudantium
+      necessitatibus mollitia eligendi distinctio. Nobis, error dolore magni
+      aspernatur, unde saepe corporis laudantium rerum perspiciatis aliquid
+      aliquam! Dignissimos iure repudiandae praesentium. Dolorem vitae officiis
+      totam esse?
+    </div>
+  </body>
+</html>

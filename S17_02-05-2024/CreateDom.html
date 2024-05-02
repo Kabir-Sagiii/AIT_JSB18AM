@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 500px;
+        padding: 30px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+        margin: 100px auto;
+      }
+      .h2Style {
+        color: red;
+      }
+    </style>
+    <script>
+      function fnCreateElement() {
+        var pDomElement = document.createElement("p"); //<p>  </p>
+
+        pDomElement.innerText = "New Para is created"; //
+
+        var divDomElement = document.querySelector("div");
+
+        divDomElement.appendChild(pDomElement);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="h2Style">Create Element</h2>
+
+      <button onclick="fnCreateElement()">Create Element</button>
+    </div>
+  </body>
+</html>
