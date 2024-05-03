@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createBrandList() {
+        // ol and then 4 li's
+        var olDomElement = document.createElement("ol"); //<ol> </ol>
+
+        var liDomElement1 = document.createElement("li"); //<li>  </li>
+        var liDomElement2 = document.createElement("li"); //<li>  </li>
+        var liDomElement3 = document.createElement("li"); //<li>  </li>
+        var liDomElement4 = document.createElement("li"); //<li>  </li>
+
+        liDomElement1.innerText = "Apple"; //<li> Apple </li>
+        liDomElement2.innerText = "Samsung";
+        liDomElement3.innerText = "Vivo";
+        liDomElement4.innerText = "Oneplus";
+
+        olDomElement.appendChild(liDomElement1);
+        olDomElement.appendChild(liDomElement2);
+        olDomElement.appendChild(liDomElement3);
+        olDomElement.appendChild(liDomElement4);
+
+        document.querySelector("body").appendChild(olDomElement);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>List Element using Javascript</h2>
+    <input type="checkbox" onchange="createBrandList()" />Create List
+  </body>
+</html>

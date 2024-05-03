@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function removeImage() {
+        var imageDomElement = document.querySelector("img");
+        imageDomElement.remove();
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Remove DOM element</h2>
+      <img
+        src="https://static.pexels.com/photos/63764/pexels-photo-63764.jpeg"
+        width="500"
+        height="300"
+      />
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
+        tempora saepe. Laboriosam similique ipsum soluta cum, laudantium sunt
+        delectus ratione obcaecati quidem minus, quae saepe nesciunt distinctio
+        commodi, nobis unde maiores. Nobis inventore sint eveniet voluptas,
+        animi ratione debitis excepturi quisquam eum. Quisquam atque ab amet
+        eligendi at commodi cum.
+      </p>
+      <input type="radio" name="image" checked />Add Image
+      <input type="radio" name="image" onchange="removeImage()" />Remove Image
+    </div>
+  </body>
+</html>
