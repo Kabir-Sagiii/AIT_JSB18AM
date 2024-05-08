@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Event Listener Dynamically</title>
+    <script>
+      function getUserDetails() {
+        //-------
+        alert("getUserDetails Called");
+      }
+
+      function fnaddEvent() {
+        var btnDomelement = document.getElementById("b2");
+
+        btnDomelement.addEventListener("click", getUserDetails);
+
+        btnDomelement.addEventListener("mouseenter", function () {
+          btnDomelement.style.color = "red";
+          btnDomelement.style.border = "2px solid red";
+        });
+        btnDomelement.addEventListener("mouseleave", function () {
+          btnDomelement.style.color = "green";
+          btnDomelement.style.color = "2px solid green";
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h2>addEventListener()</h2>
+    <button onclick="fnaddEvent()">With Event Listener</button>
+    <button id="b2">Without Event Listner</button>
+  </body>
+</html>

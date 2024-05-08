@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeButtonStyle() {
+        var buttonDomElement = document.querySelector("button");
+        buttonDomElement.style.color = "red";
+        buttonDomElement.style.border = "4px solid red";
+      }
+
+      function fnAddEventListener() {
+        //implement logic to add two event listener to the button
+        var buttonDomElement = document.querySelector("button");
+
+        buttonDomElement.addEventListener("click", function () {
+          document.querySelector("h2").style.color = "green";
+          //   document.querySelector("h2").style.backgroundColor = "black";
+          buttonDomElement.innerText = "With Event Listener";
+        });
+
+        buttonDomElement.addEventListener("mouseenter", changeButtonStyle);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>addEventListener</h2>
+
+    <button>Without Event Listener</button>
+    <input type="checkbox" onchange="fnAddEventListener()" />Add Event Listener
+  </body>
+</html>

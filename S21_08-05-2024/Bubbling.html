@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html onclick="fnHTML()">
+  <head>
+    <style>
+      #grandparent {
+        border: 6px solid red;
+        width: 800px;
+        padding: 50px;
+      }
+      #parent {
+        border: 4px solid green;
+        width: 500px;
+        padding: 50px;
+      }
+      #child {
+        border: 2px solid black;
+        width: 300px;
+        padding: 50px;
+      }
+    </style>
+    <script>
+      function fnHTML() {
+        alert("fnHTML is called");
+      }
+      function fnGrandParent() {
+        alert("fnGrandParent is called");
+      }
+      function fnParent() {
+        alert("fnParent is called");
+      }
+      function fnChild() {
+        alert("fnChild is called");
+      }
+      function fnButton() {
+        alert("fnButton is called");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Bubbling Nature</h1>
+    <div id="grandparent" onclick="fnGrandParent()">
+      <h2>Grand Parent</h2>
+      <div id="parent" onclick="fnParent()">
+        <h2>Parent</h2>
+        <div id="child" onclick="fnChild()">
+          <h2>Child</h2>
+          <button onclick="fnButton()">Click Me</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
