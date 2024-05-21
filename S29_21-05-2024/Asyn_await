@@ -1,0 +1,28 @@
+function fnfetch() {
+  return new Promise(function (resolve, reject) {
+    resolve({ name: "sagar", city: "pune" });
+  });
+}
+
+function f1() {
+  return "Sagar";
+}
+
+//create a async function
+async function handlePromise() {
+  var resp = await fnfetch();
+  console.log(resp);
+
+  //await f1()  : invalid
+}
+
+handlePromise();
+
+// var promiseObj = fnfetch();
+
+// promiseObj
+//   .then((res) => {
+//     console.log("then executed");
+//     console.log(res);
+//   })
+//   .catch((error) => {});
